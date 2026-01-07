@@ -1,0 +1,15 @@
+#no access > 365 d
+find / -type f -atime +365 -ls
+
+#setuid & setgid
+find / -type f \( -perm -4000 -o -perm -2000 \) -ls
+
+#empty
+find /path -empty -ls
+
+#recent mod
+find /path -type f -mtime -7 -ls
+
+#symbolic links, hanging files
+find / -type l ! -exec test -e {} \; -ls
+
