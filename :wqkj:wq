@@ -1,7 +1,0 @@
-# sre-toolkit
-
-
-
-Dev-Notes:
-grep -ril "String search...n" $(find . -type f -iname "*.xxx")
-
